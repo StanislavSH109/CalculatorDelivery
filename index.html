@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Task 2</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="title">Калькулятор стоимости доставки</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="form-content">
+                <form method="get" class="form">
+                    <label>
+                        <div class="form-content__inner">
+                            <span>Название товара:</span>
+                            <input type="text" id="name" name="Название Товара" class="form__input form__input--name">
+                        </div>
+                    </label>
+                    <label>
+                        <div class="form-content__inner">
+                            <span>Вес товара (кг):</span>
+                            <input type="number" id="weight" name="Вес (кг)" class="form__input form__input--weight">
+                        </div>
+                    </label>
+                    <label>
+                        <div class="form-content__inner">
+                            <span>Расстояние доставки (км): </span>
+                            <input type="number" id="distance" name="Расстояние доставки (км)" class="form__input form__input--distance">
+                        </div>
+                    </label>
+                    <button type="submit" id="btn" class="form__btn">Добавить товар</button>
+                </form>
+                <table class="product-table">
+                    <thead>
+                        <tr>
+                            <th>Название товара</th>
+                            <th>Вес (кг)</th>
+                            <th>Расстояние (км)</th>
+                            <th>Стоимость доставки</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Здесь будут добавляться товары -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
